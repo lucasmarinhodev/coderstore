@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import NavBar from './Components/NavBar';
+import NavBar from './components/NavBar';
+import ItemList from './components/ItemList';
+
 
 const images = [
   'https://via.placeholder.com/800x300?text=Image+1',
@@ -21,6 +23,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+
+
+
+      { }
       <main className="carousel">
         <button className="carousel-btn left" onClick={handlePrev}>
           &lt;
@@ -30,6 +36,10 @@ function App() {
           &gt;
         </button>
       </main>
+      <ItemList />  { }
+
+      { }
+
     </div>
   );
 }
