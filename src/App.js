@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import AppRouter from './components/route/index';
+import NavBar from './Components/NavBar';
+import AppRouter from './Components/route/index'
 
 const images = [
   'https://via.placeholder.com/800x300?text=Image+1',
