@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemList from './components/ItemList';
-
+import AppRouter from './components/route/index';
 
 const images = [
   'https://via.placeholder.com/800x300?text=Image+1',
-
 ];
 
 function App() {
@@ -22,11 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar /> { }
 
-
-
-      { }
       <main className="carousel">
         <button className="carousel-btn left" onClick={handlePrev}>
           &lt;
@@ -36,10 +31,9 @@ function App() {
           &gt;
         </button>
       </main>
-      <ItemList />  { }
 
       { }
-
+      <AppRouter />
     </div>
   );
 }

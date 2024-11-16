@@ -31,6 +31,8 @@ const mockProducts = [
 
 const ItemList = () => {
     return (
+        <>
+        <h2>PRODUTOS EM DESTAQUE</h2>
         <div className="item-list">
             {mockProducts.map((product) => (
                 <Item
@@ -42,6 +44,7 @@ const ItemList = () => {
                 />
             ))}
         </div>
+        </>
     );
 };
 
