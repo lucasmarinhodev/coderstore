@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import AppRouter from './components/route/index'
+import AppRouter from './components/route/index';
+import { ProdutoProvider } from './components/ProdutoContext';
 
 const images = [
   'https://via.placeholder.com/800x300?text=Image+1',
@@ -19,22 +20,23 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <NavBar /> { }
+    <ProdutoProvider> {/* Envolva toda a aplicação com o ProdutoProvider */}
+      <div className="App">
+        <NavBar />
 
-      <main className="carousel">
-        <button className="carousel-btn left" onClick={handlePrev}>
-          &lt;
-        </button>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image" />
-        <button className="carousel-btn right" onClick={handleNext}>
-          &gt;
-        </button>
-      </main>
+        <main className="carousel">
+          <button className="carousel-btn left" onClick={handlePrev}>
+            &lt;
+          </button>
+          <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image" />
+          <button className="carousel-btn right" onClick={handleNext}>
+            &gt;
+          </button>
+        </main>
 
-      { }
-      <AppRouter />
-    </div>
+        <AppRouter />
+      </div>
+    </ProdutoProvider>
   );
 }
 
