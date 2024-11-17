@@ -5,9 +5,9 @@ import './DetalheProduto.css';
 import { Link } from 'react-router-dom';
 
 const DetalheProduto = () => {
-    const { id } = useParams(); // Obtém o ID da URL
-    const { produtos } = useProdutoContext(); // Acessa os produtos do contexto
-    const product = produtos.find((p) => p.id === parseInt(id)); // Encontra o produto pelo ID
+    const { id } = useParams();
+    const { produtos } = useProdutoContext();
+    const product = produtos.find((p) => p.id === parseInt(id));
 
     if (!product) {
         return <p>Produto não encontrado.</p>;
@@ -15,7 +15,7 @@ const DetalheProduto = () => {
 
     const handleAddToCart = () => {
         alert(`Produto "${product.title}" adicionado ao carrinho!`);
-        // Adicionar lógica para manipular o carrinho
+
     };
 
     return (

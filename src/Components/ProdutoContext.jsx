@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-// Contexto para armazenar os produtos
+
 const ProdutoContext = createContext();
 
 export const useProdutoContext = () => useContext(ProdutoContext);

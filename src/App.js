@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <ProdutoProvider> {/* Envolva toda a aplicação com o ProdutoProvider */}
+    <ProdutoProvider> { }
       <div className="App">
         <NavBar />
 

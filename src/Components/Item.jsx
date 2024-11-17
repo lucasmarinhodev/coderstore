@@ -5,7 +5,7 @@ import './Item.css';
 const Item = ({ id, title, price, pictureUrl }) => {
     const handleAddToCart = () => {
         alert(`Produto "${title}" adicionado ao carrinho!`);
-        // Adicionar lógica para manipular o carrinho
+
     };
 
     return (

@@ -1,48 +1,48 @@
 .detalhe-produto {
     display: flex;
-    flex-direction: row; /* Imagem e conteúdo lado a lado */
-    align-items: flex-start; /* Alinha todos os itens ao topo */
-    justify-content: space-between; /* Coloca espaço entre imagem e conteúdo */
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .detalhe-imagem {
-    flex: 2; /* A imagem vai ocupar o dobro do espaço do conteúdo */
+}
+
+.detalhe-imagem {
+    flex: 2;
     width: 100%;
     max-width: 500px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-  }
-  
-  .detalhe-conteudo {
-    flex: 1; /* O conteúdo ocupa o restante do espaço */
-    margin-left:300px; /* Espaço entre a imagem e o conteúdo */
+}
+
+.detalhe-conteudo {
+    flex: 1;
+    margin-left: 300px;
     display: flex;
-    flex-direction: column; /* Alinha os elementos em coluna (vertical) */
-    align-items: flex-start; /* Alinha os itens à esquerda */
-  }
-  
-  h2 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
     margin-left: 30px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 15px;
     margin-left: 30px;
-  }
+}
 
-  .button-groupE {
+.button-groupE {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -69,33 +69,33 @@
 }
 
 
-  
-  
-  
- 
-  
-  @media (max-width: 768px) {
+
+
+
+
+
+@media (max-width: 768px) {
     .detalhe-produto {
-      flex-direction: column; /* Para dispositivos móveis, o layout vira coluna */
-      padding: 15px;
+        flex-direction: column;
+        padding: 15px;
     }
-  
+
     .detalhe-imagem {
-      max-width: 100%;
-      margin-bottom: 15px; /* Espaço abaixo da imagem */
+        max-width: 100%;
+        margin-bottom: 15px;
     }
-  
+
     .detalhe-conteudo {
-      margin-left: 0; /* Remove o espaço lateral em telas menores */
+        margin-left: 0;
     }
-  
+
     h2 {
-      font-size: 1.6rem;
+        font-size: 1.6rem;
     }
-  
+
     p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
-   
-  }
+
+
+}
