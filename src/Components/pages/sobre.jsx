@@ -1,6 +1,5 @@
 import React from "react";
 import fundosobrenos from "../assets/fundosobrenos.png";
-import { GrMonospace } from "react-icons/gr";
 
 const Sobre = () => {
   return (

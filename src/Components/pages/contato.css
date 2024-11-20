@@ -16,7 +16,6 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: #FFF;
-    -webkit-background-clip: text;
     color: transparent;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -31,7 +30,6 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: #FFF;
-    -webkit-background-clip: text;
     color: transparent;
     margin-top: 0;
     margin-bottom: 4rem;
@@ -44,7 +42,6 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: #FFF;
-    -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 0;
 }
