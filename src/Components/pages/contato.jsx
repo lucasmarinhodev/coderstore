@@ -79,8 +79,11 @@ const Contato = () => {
             className="contact-photo"
           />
           <h2 className="contact-name">Lucas Coelho</h2>
-          <a className="contact-email" href="mailto:falta-email@gmail.com">
-            falta-email@gmail.com
+          <a
+            className="contact-email"
+            href="mailto:lucascoelholima@hotmail.com"
+          >
+            lucascoelholima@hotmail.com
           </a>
           <div className="contact-icons">
             <a
@@ -93,6 +96,14 @@ const Contato = () => {
             </a>
             <a href="https://github.com/Lucascdl" className="contact-icon">
               <FaGithub />
+            </a>
+            <a
+              href="https://www.instagram.com/luucascoelhoo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-icon"
+            >
+              <FaInstagram />
             </a>
           </div>
         </div>
