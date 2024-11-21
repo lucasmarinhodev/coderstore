@@ -1,0 +1,65 @@
+/* Footer.css */
+.footer {
+    background-color: #000;
+    /* bg-neutral-950 */
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-gradient {
+    height: 12px;
+    background: linear-gradient(to right, #340edf, #0057c9);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    font-weight: normal;
+}
+
+.texto {
+    color: white;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 0.875rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-text-md {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Inter', sans-serif;
+
+}

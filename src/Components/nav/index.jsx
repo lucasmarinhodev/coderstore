@@ -2,17 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import CartWidget from "../CartWidget";
+import logo from "../assets/logo.png";
 
 function NavBar() {
   return (
     <header className="navbar">
       <div className="logo">
         <Link to="/">
-          <img
-            src="https://i.ibb.co/R0rGMg2/logo.png"
-            alt="Logo"
-            className="logo-img"
-          />
+          <img src={logo} alt="Logo" className="logo-img" />
         </Link>
       </div>
       <nav>

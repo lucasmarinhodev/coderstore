@@ -39,7 +39,7 @@ const Sobre = () => {
           <h1
             style={{
               width: "16rem",
-              fontFamily: "monospace",
+              fontFamily: "Inter, sans-serif",
               fontSize: "2rem",
               textTransform: "uppercase",
               marginBottom: "2rem",
@@ -54,7 +54,7 @@ const Sobre = () => {
           </h1>
           <p
             style={{
-              fontFamily: "monospace",
+              fontFamily: "Inter, sans-serif",
               width: "950px",
               fontSize: "1.125rem",
               marginTop: "1rem",
