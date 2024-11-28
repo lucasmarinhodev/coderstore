@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #000;
-    padding: 10px 120px;
+    padding: 10px 20px;
 }
 
 .logo-img {
@@ -21,7 +21,6 @@ nav ul {
 }
 
 nav ul li {
-    margin: 10px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -29,8 +28,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    display: flex;
-    align-items: center;
     padding: 5px 10px;
 }
 
@@ -43,4 +40,62 @@ nav ul li a {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-links {
+        z-index: 50;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #090909;
+        width: 100%;
+
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        left: 50px;
+
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .cart-icon {
+        margin-left: 10px;
+        position: absolute;
+        right: 15%;
+    }
 }

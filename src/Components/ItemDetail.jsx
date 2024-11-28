@@ -34,14 +34,20 @@ const ItemDetail = () => {
 
   return (
     <div className="item-detail-container">
-      <img src={product.pictureUrl} alt={product.title} className="item-detail-image" />
+      <img
+        src={product.pictureUrl}
+        alt={product.title}
+        className="item-detail-image"
+      />
       <h1 className="item-detail-title">{product.title}</h1>
       <p className="item-detail-price">Preço: R${product.price.toFixed(2)}</p>
       <p className="item-detail-description">
         Este é um breve texto detalhando as características do {product.title}.
       </p>
       <div className="item-detail-actions">
-        <button className="item-detail-add-to-cart">Adicionar ao carrinho</button>
+        <button className="item-detail-add-to-cart">
+          Adicionar ao carrinho
+        </button>
       </div>
     </div>
   );

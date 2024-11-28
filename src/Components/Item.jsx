@@ -1,14 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useCart } from '../components/Context/CartContext';
-import './Item.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../components/Context/CartContext";
+import "./Item.css";
 
 const Item = ({ id, title, price, pictureUrl }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart({ id, title, price, pictureUrl });
-    alert(`Produto "${title}" adicionado ao carrinho!`);
   };
 
   return (

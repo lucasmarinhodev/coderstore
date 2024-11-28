@@ -1,6 +1,6 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { useCart } from "../Context/CartContext";
-import "../nav/style.css";
+import "./CartWidget.css";
 
 function CartWidget() {
   const { cart } = useCart();
@@ -8,11 +8,9 @@ function CartWidget() {
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <div className="cart-widget">
+    <div className="cart-widget text">
       <FiShoppingCart size={30} color="#fff" />
-      {totalItems > 0 && (
-        <span className="cart-item-count">{totalItems}</span>
-      )}
+      {totalItems > 0 && <span className="cart-item-count">{totalItems}</span>}
     </div>
   );
 }
