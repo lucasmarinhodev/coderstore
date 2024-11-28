@@ -29,7 +29,9 @@ function NavBar() {
         </ul>
       </nav>
       <div className="cart-icon">
-        <CartWidget />
+        <Link to="/carrinho">
+          <CartWidget />
+        </Link>
       </div>
     </header>
   );
